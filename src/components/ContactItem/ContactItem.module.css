@@ -1,0 +1,13 @@
+.item {
+    width: 500px;
+    height: 30px
+}
+.button {
+    padding: 3px 5px;
+    background-color: blue;
+    color: white;  
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    margin-left: 15px;
+}

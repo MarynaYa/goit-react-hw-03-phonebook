@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 25px;
+} 
+.labelFlex {
+    font-weight: bold;
+}
+.inputFlex {
+   margin-left: 5px;
+   border-radius: 3px;
+}
+.inputFlex:focus {
+border-color: rgb(7, 7, 149);
+background-color: rgb(153, 188, 237);
+}

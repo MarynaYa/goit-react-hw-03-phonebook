@@ -1,0 +1,11 @@
+.section {
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    background-color: antiquewhite;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+.titleSection {
+    color: blue;
+}
