@@ -21,14 +21,23 @@ class App extends Component {
 formSubmitHandler = data => {
   const { contacts } = this.state;
 
+const isExist = contacts.find(contact => contact.name.toLowerCase() === data.name.toLowerCase());
+if (isExist) {
+  alert(`${data.name} is already in contact`)
+}
 
-  contacts.find(
-    contact => contact.name.toLowerCase() === data.name.toLowerCase()
-  )
-    ? alert(`${data.name} is already in contact`)
-    : this.setState(prevState => ({
+return this.setState(prevState => ({
         contacts: [data, ...prevState.contacts],
-      }));
+     }));;
+     
+  //contacts.find(
+  //  contact => contact.name.toLowerCase() === data.name.toLowerCase()
+ // )
+  //  ? alert(`${data.name} is already in contact`)
+ //   : this.setState(prevState => ({
+  //      contacts: [data, ...prevState.contacts],
+  //    }));
+
 };
 
 changeFilter = evt => {
